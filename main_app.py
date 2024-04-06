@@ -96,8 +96,8 @@ def page_one():
     st.write("Both parameters' temperatures decreased, and the graphs show the output sinking with the wet bulb temperature.")
 
     # Navigation to the second page
-    if st.button("Go to Sales Analysis Page"):
-        st.session_state.page = "Cooler Sales Analysis"
+    #if st.button("Go to Sales Analysis Page"):
+    #    st.session_state.page = "Cooler Sales Analysis"
 
     # Signature
     st.write("@sanghamitra_tech")
