@@ -215,6 +215,9 @@ def main():
         ]
     )
 
+    # Displaying the logo.png at the bottom of the sidebar
+    st.sidebar.image("logo.png", width=200, use_column_width=False)
+
     if "Air Cooler Performance Experiment" in selection:
         page_one()
     elif "Cooler Sales Analysis" in selection:
