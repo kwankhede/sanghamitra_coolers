@@ -1,3 +1,9 @@
+import streamlit as st
+import pandas as pd
+import altair as alt
+import plotly.express as px
+import matplotlib.pyplot as plt
+
 def page_one():
     # Load the CSV data
     df = pd.read_csv("Test data.csv")
