@@ -32,7 +32,7 @@ This Streamlit app provides two main functionalities:
 
 ## Credits
 
-This Streamlit app was created by [Your Name]. For more information, visit the [GitHub repository](https://github.com/yourusername/your-repo-name).
+This Streamlit app was created by Kapil W. . For more information, visit the [GitHub repository](https://github.com/yourusername/your-repo-name).
 
 ## Contact
 
