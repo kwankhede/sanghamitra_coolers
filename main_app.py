@@ -120,7 +120,7 @@ def page_two():
     st.subheader("Sales of Desert Cooler (Bar Chart)")
     colors = ['#009bb3', '#6d4660', '#76483d']
     plt.figure(figsize=(10, 6))
-    plt.bar(df_desert["Desert"], df_desert["Number of coolers"], color=colors)
+    plt.bar(df_desert["Models"], df_desert["Number of coolers"], color=colors)
     plt.title("Count of Desert Cooler")
     plt.xlabel("Desert Model")
     plt.ylabel("Count")
