@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 import plotly.express as px
-import matplotlib.pyplot as plt
 
 def page_one():
     # Load the CSV data
@@ -98,8 +97,7 @@ def page_one():
 
     # Navigation to the second page
     if st.button("Go to Sales Analysis Page"):
-        st.experimental_rerun()
-        st.stop()
+        st.session_state.page = "Cooler Sales Analysis"
 
     # Signature
     st.write("@sanghamitra_tech")
@@ -205,16 +203,13 @@ def page_two():
 
 
 def main():
-    pages = {
-        "Air Cooler Performance Experiment": page_one,
-        "Cooler Sales Analysis": page_two
-    }
-
     st.sidebar.title("Navigation")
-    selection = st.sidebar.radio("Go to", list(pages.keys()))
+    selection = st.sidebar.radio("Go to", ["Air Cooler Performance Experiment", "Cooler Sales Analysis"])
 
-    page = pages[selection]
-    page()
+    if selection == "Air Cooler Performance Experiment":
+        page_one()
+    else:
+        page_two()
 
 if __name__ == "__main__":
     main()
