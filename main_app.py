@@ -213,11 +213,7 @@ def main():
         ]
     )
     
-    if "Air Cooler Performance Experiment" in selection:
-        st.sidebar.write("To navigate to the Air Cooler Performance Experiment page, select it from the dropdown.")
-    elif "Cooler Sales Analysis" in selection:
-        st.sidebar.write("To navigate to the Cooler Sales Analysis page, select it from the dropdown.")
-
+   
 
 if __name__ == "__main__":
     main()
