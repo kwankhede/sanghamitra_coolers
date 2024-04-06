@@ -8,7 +8,7 @@ def page_one():
     df = pd.read_csv("Test data.csv")
 
     # Streamlit app
-    st.title("Air Cooler Performance Experiment")
+    st.title("Air Cooler Performance Analysis")
 
     # Introduction
     st.write("In this experiment, the performance of an air cooler was evaluated under various conditions of temperature and humidity.")
@@ -111,7 +111,7 @@ def page_two():
     df['Percentage'] = (df['Number of coolers'] / total) * 100
 
     # Title of the Streamlit app
-    st.title("Sanghamitra Air Cooler Sales Dashboard")
+    st.title("Sanghamitra Air Cooler Sales Analysis")
     st.write(""" 
     This report offers an overview of cooler sales during the summer of 2022. Through 
              visualizations, our goal is to illustrate and analyze sales performance and 
