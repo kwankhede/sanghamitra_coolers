@@ -100,7 +100,8 @@ def page_one():
     #    st.session_state.page = "Cooler Sales Analysis"
 
     # Signature
-    st.write("@sanghamitra_tech")
+    # Signature with hyperlink
+    st.markdown("[@sanghamitra_tech](https://sanghamitra.com/)")
 
 
 def page_two():
@@ -198,8 +199,8 @@ def page_two():
              production for "Brio 450" and "Duct 500," recognizing their popularity. This 
              strategic approach allows us to focus resources on meeting market demand efficiently. """)
     
-    # Signature
-    st.write("@sanghamitra_tech")
+    # Signature with hyperlink
+    st.markdown("[@sanghamitra_tech](https://sanghamitra.com/)")
 
 
 def main():
