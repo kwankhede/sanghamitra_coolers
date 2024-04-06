@@ -1,9 +1,3 @@
-import streamlit as st
-import pandas as pd
-import altair as alt
-import plotly.express as px
-import matplotlib.pyplot as plt
-
 def page_one():
     # Load the CSV data
     df = pd.read_csv("Test data.csv")
@@ -104,8 +98,8 @@ def page_one():
     # Signature
     st.write("@sanghamitra_tech")
 
+
 def page_two():
-    def page_two():
     # Load the Sales data
     df = pd.read_csv("Desert.csv")
 
