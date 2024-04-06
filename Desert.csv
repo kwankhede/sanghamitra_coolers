@@ -1,4 +1,7 @@
-Desert ,Number of coolers
-2.5 feet,3
-3.5 feet,10
-4 feet,6
+Models,Number of coolers
+Brio 150,3
+Brio 300,10
+Brio 450,6
+Duct 300,3
+Duct 500,6
+Fibre,1
