@@ -3,6 +3,27 @@ import pandas as pd
 import altair as alt
 import plotly.express as px
 
+
+# DESIGN implement changes to the standard streamlit UI/UX
+st.set_page_config(
+    page_title="Air Coolers",
+    page_icon="logo_air_cooler.png",
+)
+
+
+# Design change spinner color to primary color
+st.markdown(
+    """<style>.stSpinner > div > div {border-top-color: #9d03fc;}</style>""",
+    unsafe_allow_html=True,
+)
+
+# Design hide "made with streamlit" footer menu area
+hide_streamlit_footer = """<style>#MainMenu {visibility: hidden;}
+                        footer {visibility: hidden;}</style>"""
+
+st.markdown(hide_streamlit_footer, unsafe_allow_html=True)
+
+
 def page_one():
     # Load the CSV data
     df = pd.read_csv("Test data.csv")
